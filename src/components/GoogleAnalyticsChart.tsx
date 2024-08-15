@@ -6,13 +6,7 @@ import Modal from "./Modal";
 import FilterBar from "./FilterBar";
 import { GoogleAnalyticsData, DemographicData, FilterParams } from "../types/types";
 import googleAnalyticsData from "../data/googleAnalyticsData.json";
-
-const ChartWrapper = styled.div`
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-`;
+import ChartWrapper from "./ChartWrapper";
 
 const ChartTitle = styled.h3`
   font-size: 1.25rem;

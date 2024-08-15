@@ -18,7 +18,13 @@ const FilterContainer = styled.div`
   padding: 15px;
   background-color: #f0f4f8;
   border-radius: 12px;
+  gap: 15px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
 `;
 
 const FilterLabel = styled.label`
@@ -29,7 +35,6 @@ const FilterLabel = styled.label`
 
 const FilterSelect = styled.select`
   padding: 10px;
-  margin-right: 20px;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 0.9rem;
@@ -39,6 +44,10 @@ const FilterSelect = styled.select`
   &:focus {
     border-color: #007bff;
     outline: none;
+  }
+  
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 
@@ -54,6 +63,10 @@ const FilterButton = styled.button`
 
   &:hover {
     background-color: #0056b3;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 
